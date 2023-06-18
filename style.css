@@ -1,0 +1,213 @@
+@font-face {
+    font-family: Montserrat;
+    src: url(./font/Montserrat-VariableFont_wght.ttf);
+}
+@font-face {
+    font-family: Druk-Wide;
+    src: url(./font/Druk-Wide-Bold.ttf);
+}
+body{
+    background-color: rgb(06, 05, 07);
+    font-family: Druk-Wide;
+    overflow: hidden;
+    position: relative;
+}
+*{
+    color: white;
+    list-style-type: none;
+    padding: 0px;
+    margin: 0px;
+}
+#body{
+    width: 1278px;
+    height: 598px;
+    border: 1px solid white;
+    border-radius: 15px;
+    overflow: hidden;
+}
+@media screen and (min-width:1281px) {
+    
+    body{
+        background-color: rgb(06, 05, 07);
+        font-family: Druk-Wide;
+        overflow: hidden;
+        position: relative;
+        width: 1280px;
+        margin: 12.5% auto;
+    }
+
+}
+@media screen and (max-width:1279px) {
+
+    body{
+        background-color: rgb(06, 05, 07);
+        font-family: Druk-Wide;
+        overflow: hidden;
+        position: relative;
+        width: 100%;
+        margin: 12.5% auto;
+    }
+
+}
+#navbar{
+    display: flex;
+    justify-content: space-between;
+    font-family: "Druk-Wide", sans-serif;
+    fill: white;
+    gap: 5px;
+    width: 420.5px;
+    height: 20px;
+    position: absolute;
+    top:28.5px;
+    left:350px
+   
+}
+.nav{
+    font-size: 11px ;
+
+}
+#logo{
+    width: 200px;
+    position: absolute;
+    left:30px;
+    top: 20px;
+}
+#wheel_logo{
+    position:absolute;
+    width:12px;
+    top:8px;
+    left:230px
+}
+#wheel_logo:hover{
+animation:rotation 0.5s linear ;
+position:absolute
+}
+@keyframes rotation{
+    0%{transform: rotate(0deg);}
+    100%{transform : rotate(359deg)};
+}
+#gold{
+    position: relative;
+    display: flex;
+    justify-content: flex-end;
+    width: max-content;
+    top:-150px;
+    left: 850px;
+    width: 700px;
+    z-index: -3;
+}
+#moto{
+    position: absolute;
+    top: 50px;
+    width: 600px;
+    z-index: -1;
+}
+.section_moto{
+    z-index: 1;
+    position: absolute;
+}
+#wheel_moto{
+    top: 50px;
+    left: 680px;
+    width: 250px;
+    z-index: -2;
+}
+#caractere{
+    width:900px
+}
+#back_moto{
+width: 200px;
+left:720px;
+z-index:-1;
+top: 430px;
+}
+#circle{
+    animation : rotation 60s infinite;
+    z-index: 3;
+    left: 555px;
+    top: 70px;
+    width: 150px;
+}
+footer{
+    display: flex;
+    gap:10px
+}
+.radius{
+    height: 5px;
+    border-radius: 10px;
+    left: 100px;
+    top:520px;
+}
+#no-color-radius{
+    background-color: white;
+    width: 220px;
+    position: absolute;
+}
+#color-radius{
+    background-color: blueviolet;
+    position: absolute;
+    width: 150px;
+    animation: radius 5s infinite ease-out;
+    transition: 20ms;
+}
+@keyframes radius{
+    0%{width: 150px;}
+    15%{width: 200px;}
+    30%{width: 140px;}
+    50%{width: 60px;}
+    65%{width: 80px;}
+    80%{width: 40px;}
+    100%{width: 150px;}
+    
+}
+.number{
+    position: absolute;
+    top: 510px;
+}
+#right{
+    left: 350px;
+}
+#left{
+    left: 30px;
+}
+#paragraphe{
+    font-family: Montserrat;
+    font-size: 10px;
+    width: 340px;
+    font-weight: lighter;
+    position: absolute;
+    top: 480px;
+    left: 410px;
+}
+.paragraphe_aside{
+    font-family: Montserrat;
+}
+.vertical_text{
+    font-family: Montserrat;
+    font-weight: lighter;
+    font-size: 18px;
+    width: 100px;
+}
+.flex_container{
+    display: flex;
+    transform: rotate(270deg);
+    position: absolute;
+    top: 365px;
+    left: 750px;
+    align-items: center;
+    text-align: center;
+    width: 450px;
+}
+main aside{
+    position: absolute;
+    left: 1040px;
+    top: 225px;
+    display: flex;
+    gap: 25px;
+    flex-direction: column;
+    width: 230px;
+
+}
+header{
+    animation : header 3s;
+}
